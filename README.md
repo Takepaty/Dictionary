@@ -1,6 +1,8 @@
 # Classe Dictionary<TKey,TValue>
 Representa uma coleção de chaves e valores.
 
+A classe Dictionary fornece recursos semelhantes a uma Hashtable, mas é fortemente tipada. Isso significa que seu código não precisa converter de objetos genéricos em tipos específicos. Isso também significa que a classe Dictionary garante que seu código passe os tipos corretos de objetos para ele.
+
 # TKey
 O tipo das chaves no dicionário.
 
