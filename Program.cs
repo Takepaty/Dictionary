@@ -5,7 +5,28 @@ estados.Add("RJ", "Rio de Janeiro");
 estados.Add("BA", "Bahia");
 estados.Add("MG", "Minas Gerais");
 
+Console.WriteLine("Chaves e Valores cadastrados.");
+
 foreach (var item in estados)
 {
-  Console.WriteLine($"CHave: {item.Key} Valor:{item.Value}");
+  Console.WriteLine($"Chave: {item.Key} Valor:{item.Value}");
+}
+Console.WriteLine("-----------------------");
+Console.WriteLine("Removendo estado.");
+
+estados.Remove("BA");
+
+foreach (var item in estados)
+{
+  Console.WriteLine($"Chave: {item.Key} Valor: {item.Value}");
+}
+
+Console.WriteLine("-----------------------");
+Console.WriteLine("Alterando valor.");
+
+estados["SP"] = "Grande São Paulo";
+
+foreach (var item in estados)
+{
+  Console.WriteLine($"Chave: {item.Key} Valor: {item.Value}.");
 }
