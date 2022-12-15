@@ -12,6 +12,7 @@ foreach (var item in estados)
   Console.WriteLine($"Chave: {item.Key} Valor:{item.Value}");
 }
 Console.WriteLine("-----------------------");
+Console.WriteLine();
 Console.WriteLine("Removendo estado.");
 
 estados.Remove("BA");
@@ -22,6 +23,7 @@ foreach (var item in estados)
 }
 
 Console.WriteLine("-----------------------");
+Console.WriteLine();
 Console.WriteLine("Alterando valor.");
 
 estados["SP"] = "Grande São Paulo";
@@ -33,7 +35,7 @@ foreach (var item in estados)
 Console.WriteLine();
 Console.WriteLine("-----------------------");
 String chave = "BA";
-Console.WriteLine($"Verificando o elemento {chave}");
+Console.WriteLine($"Verificando o  chave: {chave}");
 
 if (estados.ContainsKey(chave))
 {
@@ -41,5 +43,5 @@ if (estados.ContainsKey(chave))
 }
 else
 {
-  Console.WriteLine($"Chave {} não existente! É seguro adicionar.");
+  Console.WriteLine($"Chave {chave} não existente! É seguro adicionar.");
 }
